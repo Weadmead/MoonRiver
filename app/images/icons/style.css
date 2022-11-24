@@ -1,0 +1,32 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-lock {
+  width: 0.6428571428571428em;
+}
+
+.icon-facebook {
+  width: 0.5881428571428571em;
+}
+
+.icon-instagram {
+  width: 0.8571428571428571em;
+}
+
+.icon-user-o {
+  width: 0.8571428571428571em;
+}

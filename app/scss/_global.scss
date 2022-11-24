@@ -1,0 +1,37 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Futura PT', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container-fluid {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container {
+	max-width: 1165px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

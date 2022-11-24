@@ -1,0 +1,198 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+.header {
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__logo {
+        padding-top: 70px;
+        padding-left: 163px;
+    }
+
+    &__top-box {
+        display: flex;
+        width: 560px;
+        background-color: #272727;
+        padding: 70px 150px 0 142px;
+    }
+
+    &__top-icons {
+        display: flex;
+    }
+
+    &__top-icon {
+        margin: 0 20px;
+    }
+
+    &__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 80px;
+
+    }
+
+    &__burger span {
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 1px;
+        top: 9px;
+    }
+
+    &__burger::after {
+        bottom: 0;
+    }
+
+    &__burger::before {
+        top: 0;
+    }
+
+    &__burger::after,
+    &__burger::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__content-box {
+        padding-top: 340px;
+        text-align: right;
+        margin-left: 178px;
+        position: relative;
+    }
+
+    &__content-title {
+        font-family: 'Forum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 71px;
+        color: #272727;
+        margin-bottom: 50px;
+
+    }
+
+    &__content-text {
+        display: block;
+        position: absolute;
+        right: -50px;
+        font-style: italic;
+    }
+
+    &__content-text::before {
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 1px;
+        right: 220px;
+        top: 50%;
+        background-color: #272727;
+    }
+
+    &__content-item {
+        width: 560px;
+        min-height: 1024px;
+        background-color: #272727;
+        position: relative;
+        margin-left: 122px;
+
+    }
+
+    &__content-img {
+        position: absolute;
+        top: 25%;
+        left: -150px;
+    }
+
+    &__content-info {
+        position: absolute;
+        bottom: 60px;
+        right: 160px;
+        color: #fff;
+        text-align: right;
+        
+    }
+
+    &__content-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;       
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    &__content-description {        
+        color: #C2C2C2;
+        margin-bottom: 6px;
+    }
+
+    &__content-price {
+        font-style: italic;
+        letter-spacing: 0.03em;
+        color: #EFC58B;
+        
+    }
+}
+
+.lang-box {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding-left: 163px; 
+}
+.lang__btn {
+    margin: 0 5px;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;    
+}
+.en-lang__btn {    
+    color: #C4C4C4;
+}
+
+.icon-link {
+    width: 22px;
+    height: 19px;
+    color: #fff;
+}
+
+.icon-heart-o::before {
+    content: "\f08a";
+    font-family: 'icomoon', sans-serif;
+
+}
+
+.icon-user-o::before {
+    content: "\f2c0";
+    font-family: 'icomoon', sans-serif;
+
+}
+
+.icon-lock::before {
+    content: "\f023";
+    font-family: 'icomoon', sans-serif;
+
+}
