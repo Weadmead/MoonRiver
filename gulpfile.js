@@ -5,8 +5,8 @@ const concat        = require('gulp-concat');
 const browserSync   = require('browser-sync').create();
 const uglify        = require('gulp-uglify-es').default;
 const autoprefixer  = require('gulp-autoprefixer');
-const imagemin      = import('gulp-imagemin');
-const del           = import('del');
+const imagemin      = require('gulp-imagemin');
+const del           = require('del');
 
 function browsersync() {
   browserSync.init({

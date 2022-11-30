@@ -9,6 +9,10 @@
 .header {
     margin-bottom: 20px;
 
+    &__inner {
+        position: relative;
+    }
+
     &__top-inner {
         display: flex;
         justify-content: space-between;
@@ -22,9 +26,12 @@
 
     &__top-box {
         display: flex;
-        width: 560px;
+        max-width: 560px;
+        width: 100%;
         background-color: #272727;
-        padding: 70px 150px 0 142px;
+        align-items: center;
+        justify-content: center;
+        // padding: 70px 150px 0 142px;
     }
 
     &__top-icons {
@@ -42,6 +49,8 @@
         height: 18px;
         cursor: pointer;
         margin-left: 80px;
+        background-color: transparent;
+        border: none;
 
     }
 
@@ -49,7 +58,7 @@
         position: absolute;
         left: 0;
         background-color: #fff;
-        width: 100%;
+        width: 30px;
         height: 1px;
         top: 9px;
     }
@@ -65,7 +74,7 @@
     &__burger::after,
     &__burger::before {
         content: '';
-        width: 100%;
+        width: 30px;
         height: 1px;
         position: absolute;
         left: 0;
@@ -86,7 +95,7 @@
     }
 
     &__content-title {
-        font-family: 'Forum';
+        font-family: 'Forum', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
@@ -115,6 +124,7 @@
 
     &__content-item {
         width: 560px;
+
         min-height: 1024px;
         background-color: #272727;
         position: relative;
@@ -207,14 +217,15 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+
     }
 
     &__image {
-        max-width: 710px;
+        width: 710px;
         height: 587px;
         object-fit: cover;
         border-radius: 20px;
-      
+        padding: 0 4px;
     }
 
     &__box {
@@ -222,7 +233,8 @@
         align-items: center;
         text-align: center;
         position: relative;
-              
+
+
     }
 
     &__info {
@@ -234,8 +246,8 @@
     }
 
     &__info-title {
-        width: 360px;
-        font-family: 'Forum';
+        max-width: 360px;
+        font-family: 'Forum', sans-serif;
         font-weight: 400;
         font-size: 64px;
         line-height: 71px;
@@ -284,7 +296,7 @@
     }
 
     &__info-title {
-        font-family: 'Forum';
+        font-family: 'Forum', sans-serif;
         font-weight: 400;
         font-size: 48px;
         line-height: 53px;
@@ -298,7 +310,7 @@
     }
 
     &__form {
-        width: 386px;
+        max-width: 386px;
         position: relative;
     }
 
@@ -307,7 +319,8 @@
         border: none;
         border-bottom: 1px solid #fff;
         padding: 10px 50px 10px 15px;
-        width: 386px;
+        max-width: 386px;
+        width: 100%;
         color: #fff;
     }
 
@@ -320,6 +333,9 @@
 
     &__map-box {
         overflow: hidden;
+        width: 800px;
+        height: 600px;
+        
     }
 
 }
@@ -332,25 +348,35 @@
         width: 100%;
         display: grid;
         justify-items: center;
-        align-items: center;
-        grid-template-rows: 400px 400px;
-        grid-template-columns: 400px 600px 400px;
+        align-items: stretch;
+        grid-template-rows: repeat(2, 400px);        
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-flow: dense;
-        gap: 20px;
+        column-gap: 20px;
+        row-gap: 20px;
     }
 
     &__item {
-        width: 100%;
-        height: 100%;
+        width: 400px;   
         background-color: #EDEDED;
         padding: 60px 70px 170px 60px;
         position: relative;
         border-radius: 20px;
+        grid-row: span 1; 
+        grid-column: span 2; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+      
+        
     }
 
     &__item-img {
-        margin: 0 auto; 
+        object-fit: cover;
         border-radius: 20px;
+       
     }
 
     &__item-info {
@@ -360,9 +386,15 @@
     }
 
     &__item--2 {
-        grid-row: span 3;
+        grid-row: span 2;               
         padding: 0;
         background-color: #fff;
+        
+        width: 100%;
+        img {
+            height: 820px;
+           width: 600px;
+        }
 
         .product__item-info {
             bottom: 40px;
@@ -394,7 +426,7 @@
     }
 
     &__item-price {
-        font-family: 'Segoe UI';
+        font-family: 'Segoe UI',sans-serif;
         font-style: italic;
         font-weight: 400;
         font-size: 18px;
@@ -449,12 +481,12 @@
         width: 385px;
         height: 385px;
         object-fit: cover;
-        margin-right: 20px;
+        
         border-radius: 20px;
     }
 
     .slick-dots {
-        display: flex;
+        display: flex;        
         position: absolute;
         right: 253px;
         bottom: -90px;
@@ -481,7 +513,7 @@
 
     .slick-arrow {
         position: absolute;
-        bottom: -90px;
+        bottom: -93px;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -526,19 +558,30 @@
 .subscribe {
     &__inner {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        
     }
-
+    &__images-box {
+        max-width: 710px;
+        width: 100%;
+        
+    }
     &__image {
         max-width: 710px;
+        width: 100%;       
         height: 640px;
         object-fit: cover;
+      
     }
 
     &__info-box {
+        
         width: 100%;
-        margin-left: 183px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
     }
 
@@ -549,7 +592,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        width: 394px;
+        max-width: 394px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #272727;
@@ -623,6 +666,9 @@
 
     &__logo {
         margin-top: 18px;
+    }
+    &__logo-img {
+        width: 100%;
     }
 
     &__content {
@@ -700,3 +746,248 @@
         top: -6px;
     }
 }
+
+
+.rightside {
+
+    &__inner {
+        position: absolute;
+        background-color: #272727;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #272727;
+        
+        padding: 40px 0 0px 0;
+        transition: all .2s ease-in-out;
+        z-index: 10;
+    }
+
+    &__icon-box {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding: 0 160px 0 253px;
+    }
+
+    &__top-icons {
+        margin-right: 80px;
+
+    }
+
+    &__top-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    &__info {
+        display: flex;
+        padding: 0 160px 0 253px;
+    }
+
+    &__info-box {
+        width: 749px;
+        width: 100%;
+        height: 268px;
+        margin-right: 85px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        color: #FFFFFF;
+    }
+
+    &__info-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Forum', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 53px;
+        letter-spacing: 0.03em;
+
+    }
+
+    &__info-subtitle {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        opacity: .8;
+    }
+
+    &__info-link {
+        position: absolute;
+        bottom: 30px;
+        right: 84px;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 2px;
+        right: -50px;
+    }
+
+    &__email {
+        margin: 0;
+        margin-top: 48px;
+    }
+
+    &__google {
+        height: 41px;
+        position: absolute;
+        top: -6px;
+    }
+
+    &__email-form,
+    &__email-input {
+        width: 230px;
+    }
+
+    &__content-box {
+        flex-direction: column;
+
+    }
+}
+
+.rightside.rightside-menu--close {
+    .rightside__inner {
+        left: -500%;
+    }
+
+    // transform: translateX(-100%);
+}
+
+.tabs {
+    clear: both;
+    position: relative;
+    display: flex;
+    height: 500px;
+
+
+}
+
+.tab {
+    color: #fff;
+    height: 70px;
+    background-color: #2F2F2F;
+    padding-top: 23px;
+    padding-left: 253px;
+
+}
+
+.tab:last-child {
+    padding-right: 192px;
+}
+
+.tab label {
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+
+
+
+}
+
+.tab+.tab {
+    padding-left: 20px;
+
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+.tab__content {
+    position: relative;
+    top: 140px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+    opacity: 0;
+   
+
+
+}
+
+.tab__list+.tab__list {
+    margin-left: 100px;
+}
+
+.tab__list-title {
+    margin-bottom: 30px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.tab__list-item {
+    margin-bottom: 15px;
+    width: 130px;
+}
+
+.tab__list-link {
+
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #fff;
+    opacity: .8;
+}
+
+.link-other {
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #EFC58B;
+    width: 150px;
+}
+
+[type=radio]:checked~label {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    z-index: 2;
+    padding-bottom: 23px;
+}
+
+[type=radio]:checked~label~.tab__content {
+    z-index: 1;
+    opacity: 1;
+}
+
+.header__content-box+.header__item-box {
+    padding: 0;
+    margin: 0;
+}
+
+@import 'media';

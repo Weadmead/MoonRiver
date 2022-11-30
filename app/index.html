@@ -20,47 +20,628 @@
 
             <header class="header">
                 <div class="container-fluid">
-                    <div class="header__top-inner">
-                        <a class="header__logo logo" href="#">
-                            <img class="header__logo-img logo-image" src="images/logo.svg" alt="logo">
-                        </a>
-                        <div class="header__top-box">
-                            <ul class="header__top-icons">
-                                <li class="header__top-icon">
-                                    <a class="icon-link icon-heart-o" href="#"></a>
-                                </li>
-                                <li class="header__top-icon">
-                                    <a class="icon-link icon-user-o" href="#"></a>
-                                </li>
-                                <li class="header__top-icon">
-                                    <a class="icon-link icon-lock" href="#"></a>
-                                </li>
-                            </ul>
-                            <div class="header__burger">
-                                <span class="menu__btn-line"></span>
+                    <div class="header__inner">
+                        <div class="header__top-inner">
+                            <a class="header__logo logo" href="#">
+                                <img class="header__logo-img logo-image" src="images/logo.svg" alt="logo">
+                            </a>
+                            <div class="header__top-box">
+                                <ul class="header__top-icons">
+                                    <li class="header__top-icon">
+                                        <a class="icon-link icon-heart-o" href="#"></a>
+                                    </li>
+                                    <li class="header__top-icon">
+                                        <a class="icon-link icon-user-o" href="#"></a>
+                                    </li>
+                                    <li class="header__top-icon">
+                                        <a class="icon-link icon-lock" href="#"></a>
+                                    </li>
+                                </ul>
+                                <button class="header__burger header__btn">
+                                    <span class="menu__btn-line"></span>
+                                </button>
+    
                             </div>
                         </div>
-                    </div>
-                    <div class="header__content">
-                        <div class="header__content-box">
-                            <h1 class="header__content-title">
-                                HIGH JEWELRY
-                            </h1>
-                            <a class="header__content-text" href="#">Смотреть коллекцию</a>
-                        </div>
-                        <div class="header__content-item">
-                            <img class="header__content-img" src="images/ring.png" alt="ring">
-                            <div class="header__content-info">
-                                <div class="header__content-name">КОЛЬЦО TRINITY, Cartier</div>
-                                <div class="header__content-description">Белое золото, бриллианты</div>
-                                <div class="header__content-price">498 000 ₽</div>
+                        <div class="header__content">
+                            <div class="header__content-box">
+                                <h1 class="header__content-title">
+                                    HIGH JEWELRY
+                                </h1>
+                                <a class="header__content-text" href="#">Смотреть коллекцию</a>
                             </div>
+                            <div class="header__content-box header__item-box">
+                                <div class="header__content-item">
+                                    <img class="header__content-img" src="images/ring.png" alt="ring">
+                                    <div class="header__content-info">
+                                        <div class="header__content-name">КОЛЬЦО TRINITY, Cartier</div>
+                                        <div class="header__content-description">Белое золото, бриллианты</div>
+                                        <div class="header__content-price">498 000 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
-                    </div>
-                    <div class="lang-box">
-                        <div class="ru-lang__btn lang__btn">RU</div>
-                        <div class="en-lang__btn lang__btn">EN</div>
-                    </div>
+                        <div class="lang-box">
+                            <div class="ru-lang__btn lang__btn">RU</div>
+                            <div class="en-lang__btn lang__btn">EN</div>
+                        </div>
+                        <div class="rightside rightside-menu--close">                            
+                                <div class="rightside__inner">
+
+                                    <div class="rightside__top">
+                                        <a class="rightside__logo logo" href="#">
+                                            <img class="rightside__logo-img logo-image" src="images/footer-logo.svg"
+                                                alt="logo">
+                                        </a>
+                                        <div class="rightside__icon-box">
+                                            <ul class="rightside__top-icons header__top-icons">
+                                                <li class="rightside__top-icon header__top-icon">
+                                                    <a class="icon-link icon-heart-o" href="#"></a>
+                                                </li>
+                                                <li class="rightside__top-icon header__top-icon">
+                                                    <a class="icon-link icon-user-o" href="#"></a>
+                                                </li>
+                                                <li class="rightside__top-icon header__top-icon">
+                                                    <a class="icon-link icon-lock" href="#"></a>
+                                                </li>
+                                            </ul>
+                                            <button class="rightside__top-btn">
+                                                <img src="images/cross.svg" alt="cross">
+                                            </button>
+                                        </div>                                       
+                                    </div>
+
+                                    <div class="rightside__tabs">
+                                        <div data-tabs class="tabs">    
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-1" checked>
+                                               <label for="tab-1">Ювелирные изделия</label>
+                                               <div class="tab__content">
+                                                  <ul class="tab__list">
+                                                    <h4 class="tab__list-title">для кого</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для женщин</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для мужчин</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для детей</a>
+                                                    </li>
+                                                  </ul>
+                                                  <ul class="tab__list">
+                                                    <h4 class="tab__list-title">Категории</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Кольца</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Браслеты</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Колье</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Серьги</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Броши</a>
+                                                    </li>
+                                                  </ul>
+                                                  <ul class="tab__list">
+                                                    <h4 class="tab__list-title">материал</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Желтое золото</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Белое золото</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Розовое золото</a>
+                                                    </li>
+                                                  </ul>
+                                                  <ul class="tab__list">
+                                                    <h4 class="tab__list-title">бренд</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Mercury</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Chopard</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Cartier</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Graff</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Garrard</a>
+                                                    </li>                                                    
+                                                    <a class="link-other" href="#">Показать все бренды</a>
+                                                  </ul>                                                  
+                                               </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-2">
+                                               <label for="tab-2">часы</label>
+                                               <div class="tab__content">
+                                                
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">Категории</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Кольца</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Браслеты</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Колье</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Серьги</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Броши</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                    <h4 class="tab__list-title">для кого</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для женщин</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для мужчин</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Для детей</a>
+                                                    </li>
+                                                  </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">материал</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Желтое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Белое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Розовое золото</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>                                                  
+                                             </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-3">
+                                               <label for="tab-3">ароматы</label>
+                                               <div class="tab__content">
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">для кого</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для женщин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для мужчин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для детей</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">Категории</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Кольца</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Браслеты</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Колье</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Серьги</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Броши</a>
+                                                  </li>
+                                                </ul>
+                                               
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>  
+                                                <ul class="tab__list">
+                                                    <h4 class="tab__list-title">материал</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Желтое золото</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Белое золото</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Розовое золото</a>
+                                                    </li>
+                                                  </ul>                                                
+                                             </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-4">
+                                               <label for="tab-4">бренды</label>
+                                               <div class="tab__content">
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">для кого</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для женщин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для мужчин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для детей</a>
+                                                  </li>
+                                                </ul>
+                                                
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">материал</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Желтое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Белое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Розовое золото</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                    <h4 class="tab__list-title">Категории</h4>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Кольца</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Браслеты</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Колье</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Серьги</a>
+                                                    </li>
+                                                    <li class="tab__list-item">
+                                                        <a class="tab__list-link" href="#">Броши</a>
+                                                    </li>
+                                                  </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>                                                  
+                                             </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-5">
+                                               <label for="tab-5">изделия из кожи</label>
+                                               <div class="tab__content">
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">для кого</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для женщин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для мужчин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для детей</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">Категории</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Кольца</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Браслеты</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Колье</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Серьги</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Броши</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">материал</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Желтое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Белое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Розовое золото</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>                                                  
+                                             </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-6">
+                                               <label for="tab-6">Свадебные украшения</label>
+                                               <div class="tab__content">
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">для кого</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для женщин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для мужчин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для детей</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">Категории</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Кольца</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Браслеты</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Колье</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Серьги</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Броши</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">материал</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Желтое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Белое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Розовое золото</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>                                                  
+                                             </div> 
+                                            </div>
+                                            <div class="tab">
+                                               <input type="radio" name="tabgroup" id="tab-7">
+                                               <label for="tab-7">другое</label>
+                                               <div class="tab__content">
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">для кого</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для женщин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для мужчин</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Для детей</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">Категории</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Кольца</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Браслеты</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Колье</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Серьги</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Броши</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">материал</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Изделия с бриллиантами</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Желтое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Белое золото</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Розовое золото</a>
+                                                  </li>
+                                                </ul>
+                                                <ul class="tab__list">
+                                                  <h4 class="tab__list-title">бренд</h4>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Mercury</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Chopard</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Cartier</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Graff</a>
+                                                  </li>
+                                                  <li class="tab__list-item">
+                                                      <a class="tab__list-link" href="#">Garrard</a>
+                                                  </li>                                                    
+                                                  <a class="link-other" href="#">Показать все бренды</a>
+                                                </ul>                                                  
+                                             </div> 
+                                            </div>
+                                         </div>
+                                    </div>
+
+                                    <div class="rightside__info">
+                                        <div class="rightside__info-box" style="background-image: url(/images/rightside-bg.jpg);">
+                                            <h5 class="rightside__info-title">JUSTE UN CLOU</h5>
+                                            <p class="rightside__info-subtitle">Новая коллекция by Mercury</p>
+                                            <a class="rightside__info-link" href="#">Cмотреть коллекцию
+                                                <img class="rightside__arrow" src="images/arrow-right.png" alt="arrow-right">
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="footer__content-box rightside__content-box">
+                                            <div class="footer__contacts">
+                                                <p class="footer__contacts-text footer__content-text">
+                                                    телефон горячей линии
+                                                </p>
+                                                <a class="footer__contacts-link" href="tel:7800456456">+7 800 456 456</a>
+                                                <ul class="footer__social social-list">
+                                                    <li class="footer__social-item social-item">
+                                                        <a class="footer__social-link social-link icon-facebook" href="#"></a>
+                                                    </li>
+                                                    <li class="footer__social-item social-item">
+                                                        <a class="footer__social-link social-link icon-instagram" href="#"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer__email rightside__email">
+                                                <p class="footer__email-text footer__content-text">
+                                                    подпишитесь на новости
+                                                </p>
+                                                <form class="footer__email-form rightside__email-form">
+                                                    <input class="footer__email-input rightside__email-input" type="text" placeholder="Введите E-mail">
+                                                    <a href="#">
+                                                        <img class="input-arrow footer-arrow" src="images/arrow-right.png"
+                                                            alt="arrow-right">
+                                                    </a>
+                                                </form>
+                                                <div class="footer__download-links">
+                                                    <a class="footer__apple-link" href="#">
+                                                        <img class="footer__donwload-img" src="images/apple.png" alt="apple store">
+                                                    </a>
+                                                    <a class="footer__google-link" href="#">
+                                                        <img class="footer__donwload-img footer__google rightside__google" src="images/google.png"
+                                                            alt="google store">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        
+
+                                </div>                            
+                        </div>
+                    </div>                  
                 </div>
 
             </header>
@@ -112,7 +693,7 @@
                             <div class="location__map-box">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63575.54536456645!2d37.61514012745758!3d55.73773557955581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a8dc17cb187%3A0xa903e7259290ae52!2z0JrRg9GA0YHQutCw0Y8!5e0!3m2!1sru!2sca!4v1669334515033!5m2!1sru!2sca"
-                                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -122,7 +703,7 @@
                 <section class="product">
                     <div class="container-fluid">
                         <div class="product__grid-container">
-                            <a class="product__item" href="#">
+                            <a class="product__item product__item--1" href="#">
                                 <img class="product__item-img" src="images/content/1.png" alt="ring"></img>
                                 <div class="product__item-info">
                                     <div class="product__item-name">КОЛЬЦО jows, Cartier</div>
@@ -138,7 +719,7 @@
                                     <div class="product__item-price">539 000 ₽</div>
                                 </div>
                             </a>
-                            <a class="product__item" href="#">
+                            <a class="product__item product__item--3" href="#">
                                 <img class="product__item-img" src="images/content/3.png" alt="earring"></img>
                                 <div class="product__item-info">
                                     <div class="product__item-name">Серьги moon, HUBLOT</div>
@@ -146,7 +727,7 @@
                                     <div class="product__item-price">498 000 ₽</div>
                                 </div>
                             </a>
-                            <a class="product__item" href="#">
+                            <a class="product__item product__item--4" href="#">
                                 <img class="product__item-img" src="images/content/4.png" alt="ring"></img>
                                 <div class="product__item-info">
                                     <div class="product__item-name">КОЛЬЦО croix, Cartier</div>
@@ -209,7 +790,7 @@
                 <section class="subscribe">
                     <div class="container-fluid">
                         <div class="subscribe__inner">
-                            <div class="subcribe__images-box">
+                            <div class="subscribe__images-box">
                                 <img class="subscribe__image" src="images/slider/4.jpg" alt="woman image">
                             </div>
                             <div class="subscribe__info-box">
@@ -301,7 +882,8 @@
                                         <img class="footer__donwload-img" src="images/apple.png" alt="apple store">
                                     </a>
                                     <a class="footer__google-link" href="#">
-                                        <img class="footer__donwload-img footer__google-image" src="images/google.png" alt="google store">
+                                        <img class="footer__donwload-img footer__google" src="images/google.png"
+                                            alt="google store">
                                     </a>
                                 </div>
                             </div>
