@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'libs';
+@import 'animate';
 @import 'global';
 
 
@@ -22,6 +23,8 @@
     &__logo {
         padding-top: 70px;
         padding-left: 163px;
+       animation-name: fadeIn;
+       animation-duration: 1.4s;
     }
 
     &__top-box {
@@ -92,6 +95,7 @@
         text-align: right;
         margin-left: 178px;
         position: relative;
+       
     }
 
     &__content-title {
@@ -102,6 +106,8 @@
         line-height: 71px;
         color: #272727;
         margin-bottom: 50px;
+        animation-name: fadeInLeft;
+        animation-duration: 1.2s;
 
     }
 
@@ -110,6 +116,9 @@
         position: absolute;
         right: -50px;
         font-style: italic;
+        color: #282828;
+        animation-name: fadeInLeft;
+        animation-duration: 2.6s;
     }
 
     &__content-text::before {
@@ -124,11 +133,12 @@
 
     &__content-item {
         width: 560px;
-
+        
         min-height: 1024px;
         background-color: #272727;
         position: relative;
         margin-left: 122px;
+        
 
     }
 
@@ -136,6 +146,11 @@
         position: absolute;
         top: 25%;
         left: -150px;
+        animation-name: fadeInRight;
+        animation-duration: 2s;
+     
+        
+       
     }
 
     &__content-info {
@@ -144,6 +159,9 @@
         right: 160px;
         color: #fff;
         text-align: right;
+        animation-name: fadeInRight;
+        animation-duration: 3s;
+        
 
     }
 
@@ -154,6 +172,7 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin-bottom: 6px;
+        
     }
 
     &__content-description {
@@ -170,20 +189,28 @@
 }
 
 .lang-box {
-    display: flex;
+
     position: absolute;
     bottom: 0;
     padding-left: 163px;
 }
 
-.lang__btn {
-    margin: 0 5px;
+.lang__btn {    
     font-size: 16px;
     line-height: 21px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .en-lang__btn {
+
+    color: #EFC58B;
+}
+
+.ru-lang__btn {
     color: #C4C4C4;
 }
 
@@ -221,11 +248,17 @@
     }
 
     &__image {
-        width: 710px;
+        max-width: 710px;
+        width: 100%;
         height: 587px;
         object-fit: cover;
         border-radius: 20px;
         padding: 0 4px;
+        transition: all .5s;
+    }
+
+    &__image:hover {
+        transform: scale(1.03);
     }
 
     &__box {
@@ -233,7 +266,8 @@
         align-items: center;
         text-align: center;
         position: relative;
-
+        animation-name: zoomInUp;
+        animation-duration: 1s;
 
     }
 
@@ -285,6 +319,8 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        animation-name: fadeIn;
+       animation-duration: 2.6s;
     }
 
     &__info {
@@ -335,7 +371,7 @@
         overflow: hidden;
         width: 800px;
         height: 600px;
-        
+
     }
 
 }
@@ -349,7 +385,7 @@
         display: grid;
         justify-items: center;
         align-items: stretch;
-        grid-template-rows: repeat(2, 400px);        
+        grid-template-rows: repeat(2, 400px);
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-flow: dense;
         column-gap: 20px;
@@ -357,26 +393,31 @@
     }
 
     &__item {
-        width: 400px;   
+        width: 400px;
         background-color: #EDEDED;
         padding: 60px 70px 170px 60px;
         position: relative;
         border-radius: 20px;
-        grid-row: span 1; 
-        grid-column: span 2; 
+        grid-row: span 1;
+        grid-column: span 2;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        
-      
-        
+        transition: all .5s;
+        animation-name: flipInY;
+        animation-duration: 2s;
+
+    }
+
+    &__item:hover {
+        transform: scale(1.03);
     }
 
     &__item-img {
         object-fit: cover;
         border-radius: 20px;
-       
+
     }
 
     &__item-info {
@@ -386,14 +427,15 @@
     }
 
     &__item--2 {
-        grid-row: span 2;               
+        grid-row: span 2;
         padding: 0;
         background-color: #fff;
-        
+
         width: 100%;
+
         img {
             height: 820px;
-           width: 600px;
+            width: 600px;
         }
 
         .product__item-info {
@@ -426,7 +468,7 @@
     }
 
     &__item-price {
-        font-family: 'Segoe UI',sans-serif;
+        font-family: 'Segoe UI', sans-serif;
         font-style: italic;
         font-weight: 400;
         font-size: 18px;
@@ -455,6 +497,8 @@
         padding-top: 100px;
         padding-bottom: 80px;
         padding-left: 178px;
+        animation-name: fadeInLeft;
+        animation-duration: 1.6s;
 
     }
 
@@ -481,12 +525,12 @@
         width: 385px;
         height: 385px;
         object-fit: cover;
-        
+
         border-radius: 20px;
     }
 
     .slick-dots {
-        display: flex;        
+        display: flex;
         position: absolute;
         right: 253px;
         bottom: -90px;
@@ -537,6 +581,8 @@
 
 .social-list {
     display: flex;
+    animation-name: fadeIn;
+    animation-duration: 1.4s;
 }
 
 .social-link {
@@ -560,28 +606,32 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
     }
+
     &__images-box {
         max-width: 710px;
         width: 100%;
-        
+        animation-name: fadeInLeft;
+        animation-duration: 1.2s;
     }
+
     &__image {
         max-width: 710px;
-        width: 100%;       
+        width: 100%;
         height: 640px;
         object-fit: cover;
-      
+
     }
 
     &__info-box {
-        
+
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        animation-name: fadeInRight;
+        animation-duration: 1.6s;
 
     }
 
@@ -667,6 +717,7 @@
     &__logo {
         margin-top: 18px;
     }
+
     &__logo-img {
         width: 100%;
     }
@@ -759,7 +810,7 @@
         right: 0;
         width: 100%;
         background-color: #272727;
-        
+
         padding: 40px 0 0px 0;
         transition: all .2s ease-in-out;
         z-index: 10;
@@ -930,7 +981,7 @@
     display: flex;
     transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
     opacity: 0;
-   
+
 
 
 }

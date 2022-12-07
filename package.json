@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.10",
-    "del": "^7.0.0",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
@@ -22,6 +22,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "wowjs": "^1.1.3"
   }
 }
